@@ -356,3 +356,10 @@ class GRPOConfig(TrainingArguments):
             "help": "Logits processor list that can be used for guided decoding"
         },
     )
+
+    print_completions_to_console: bool = field(
+        default=True,
+        metadata={
+            "help": "Decide if the completions sample should be printed to the console."
+        }
+    )
